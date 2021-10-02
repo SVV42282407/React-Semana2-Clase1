@@ -1,11 +1,12 @@
 import './App.css';
 import LoginHackaton from './functional/loginhackaton';
+import MenuHackaton from './functional/menuHackaton';
 
 function App() {
     return (
         <div className="container">
             <div className="nav-bar">
-
+                <MenuHackaton/>
             </div>
             <div className="main">
                 <div className="left">
