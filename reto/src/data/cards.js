@@ -27,7 +27,7 @@ export const cards = [
     {
         name: 'ligula volutpat',
         productDescription: 'Lorem ipsum dolor sit amet consectetur adipiscing elit id parturient erat',
-        url: 'https://www.ipp.edu.pe/blog/wp-content/uploads/2020/06/shutterstock_573386038.jpg'
+        url: 'https://www.ipp.edu.pe/blog/wp-content/uploads/2020/06/shutterstock_573386038.jpg',
         additional: {
             notes: 'This is th eastern gorilla. There is also a western gorilla.'
         }
