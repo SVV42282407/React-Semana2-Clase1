@@ -1,3 +1,7 @@
+body {
+    background: url('../data/background.fw.png') fixed center no-repeat;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -30,7 +34,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: blueviolet;
     padding: 20px;
     box-sizing: border-box;
 }
