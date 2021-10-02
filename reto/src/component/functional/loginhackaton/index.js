@@ -13,7 +13,7 @@ const LoginHackaton = () => {
             <form name="loginForm" action="." method="POST">
                 <div className="row">
                     <input className="form-control" autoComplete="off" name="username" placeholder="Username" required/>
-                    <button className="submit-button" onClick={(e) => loginSystem(e)}>GET STARTED</button> 
+                    <button className="submit-button form-control" onClick={(e) => loginSystem(e)}>GET STARTED</button> 
                 </div>
             </form>
         </div>
