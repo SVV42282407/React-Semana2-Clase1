@@ -17,7 +17,9 @@ function App() {
             </div>
             <div className="main">
                 <div className="left">
-                    <h1>Connect to people, not platforms.</h1><br/>
+                    <div className="row">
+                      <h1>Connect to people, not platforms.</h1>
+                    </div>
                     <LoginHackaton/>
                 </div>
                 <div className="center">2</div>
