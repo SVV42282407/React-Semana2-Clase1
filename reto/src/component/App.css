@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav-bar, .main, .footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.nav-bar {
+    flex: 0 1 auto;
+}
+
+.footer {
+    flex: 0 1 auto;
+}
+
+.left, .center, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: blueviolet;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    flex: 0.45;
+    height: 100%;
+}
+
+.center {
+    flex: 0.1;
+}

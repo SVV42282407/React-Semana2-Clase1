@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App'; #Aqui están los retos de la semana 02
+import App from './component/App'; //Aquí el hacaktón de la semana 02
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
