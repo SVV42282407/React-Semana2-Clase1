@@ -7,7 +7,7 @@ const MenuHackaton = (props) => {
             url} = props;
     return(
         <div className="menu-item">
-            <a id={key} href={url}>{name}</a>
+            <a attr-id={key} href={url}>{name}</a>
         </div>
     )
 }
