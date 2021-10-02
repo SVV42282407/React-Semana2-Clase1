@@ -1,0 +1,20 @@
+
+.loginForm {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .loginForm input, .loginForm button{
+    margin-bottom:20px;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  input.username, input.password {
+    width: calc(100% - 34px);
+  }
+  
+  .messageBar {
+    padding: 20px;
+  }

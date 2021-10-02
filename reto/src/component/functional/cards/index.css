@@ -1,0 +1,14 @@
+
+.col-4 .productPreview{
+    max-width: 100%;
+}
+
+.justify-description {
+    text-align: justify !important;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.card-wrapper button {
+    float: right;
+}

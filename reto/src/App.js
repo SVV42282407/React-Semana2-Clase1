@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+//import LoginForm from './component/functional/login';
+import Cards from './component/functional/cards';
+import { cards } from './data/cards';
 
 function App() {
+  const showAdditonal = (additional) => {
+         const alertInformation = Object.entries(additional)
+             .map(information => `${information[0]}: ${information[1]}`)
+             .join('\n');
+             alert(alertInformation)   
+     }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <main>
+        {/*<LoginForm/>*/}
+        <div className="row">
+          {cards.map(product => (
+                  <Cards
+                      key={product.name}
+                      name={product.name}
+                      productDescription={product.productDescription}
+                      url={product.url}
+                      additional={product.additional}
+                      showAdditional={showAdditonal}
+                  />
+            ))}
+          </div>
+      </main>
     </div>
   );
 }

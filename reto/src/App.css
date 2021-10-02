@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+main {
+  position: absolute;
+  top:50%;
+  width: 100%;
+  transform:translate(0%, -50%);
+  -webkit-transform:translate(0%, -50%);
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-left: 5%;
+}
+
+.col-4 {
+  width: 30%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
