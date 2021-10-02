@@ -1,12 +1,19 @@
 import './App.css';
 import LoginHackaton from './functional/loginhackaton';
 import MenuHackaton from './functional/menuHackaton';
+import { menu } from '../data/menu';
 
 function App() {
     return (
         <div className="container">
             <div className="nav-bar">
-                <MenuHackaton/>
+                {menu.map(item => (
+                    <MenuHackaton
+                        key={item.id}
+                        name={item.title}
+                        url={item.url}
+                    />
+                ))}
             </div>
             <div className="main">
                 <div className="left">

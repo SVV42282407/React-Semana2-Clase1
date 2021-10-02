@@ -16,6 +16,9 @@
 
 .nav-bar {
     flex: 0 1 auto;
+    width: 50%;
+    float: right;
+    margin-left: 50%;
 }
 
 .footer {
