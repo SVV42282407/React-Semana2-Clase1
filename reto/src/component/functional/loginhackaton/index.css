@@ -3,13 +3,13 @@
     margin-right: 20px;
 }
 
+.form-control.last {
+    margin-right: 0px;
+}
+
 .loginForm {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-input[name="username"] {
-    min-width: 300px;
 }
 
 .submit-button {
@@ -17,4 +17,12 @@ input[name="username"] {
     color: white;
     border: none;
     float: right;
+}
+
+.col-flex-8 {
+    flex: 0.667 1 auto; /* 2/3 */
+}
+
+.col-flex-4 {
+    flex: 0.333 1 auto; /* 1/3 */
 }

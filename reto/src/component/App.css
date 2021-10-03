@@ -47,12 +47,54 @@ body {
     flex: 0.1;
 }
 
-.left .row {
-    color: white;
-    width: 100%;
-}
-
 .left {
     padding-left: 40px;
     text-align: left;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+
+@media (max-width: 767px) { 
+
+    body {
+        background: none;
+    }
+
+    .main, .footer{
+        flex-direction: column;
+    }
+
+    .left {
+        padding-left: 20px;
+        background: #FCC129;
+    }
+
+    .center, .right {
+        background: #1452C2;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px){
+    .row {
+        flex-direction: column;
+    }
+
+    .form-control {
+        margin-right: 0px !important;
+        margin-bottom: 20px;
+    }
 }
