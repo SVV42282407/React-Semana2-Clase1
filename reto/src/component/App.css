@@ -83,11 +83,16 @@ body {
     .left {
         padding-left: 20px;
         background: #FCC129;
+        width: 100%;
     }
 
     .center, .right {
         background: #1452C2;
         width: 100%;
+    }
+
+    .nav-bar {
+        background: #FCC129;
     }
 
 }

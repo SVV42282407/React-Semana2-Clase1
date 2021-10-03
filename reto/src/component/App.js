@@ -5,6 +5,7 @@ import { menu } from '../data/menu';
 import Modal from './functional/Modal';
 import useModal from './functional/Modal/useModal';
 import animacion from '../data/animacion.gif';
+import gif2 from '../data/gif-animado-2.gif';
 
 function App() {
     const {isShowing, toggle} = useModal();
@@ -41,7 +42,9 @@ function App() {
                     modalContent={modalContent}
                 />
                 </div>
-                <div className="right">3</div>
+                <div className="right">
+                    <img src={gif2} alt="animacion1"/>
+                </div>
             </div>
             <div className="footer"></div>
         </div>
