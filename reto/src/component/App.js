@@ -8,7 +8,7 @@ import animacion from '../data/animacion.gif';
 
 function App() {
     const {isShowing, toggle} = useModal();
-    const modalContent = "<p>Hello, I'm a modal</p>";
+    const modalContent = '<iframe width="560" height="315" src="https://www.youtube.com/embed/6u_hPr3hT1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     return (
         <div className="container">
             <div className="nav-bar">
@@ -33,7 +33,7 @@ function App() {
                     </div>
                 </div>
                 <div className="center">
-                    <img src={animacion} onClick={toggle} width="128" alt="modal"/>
+                    <img src={animacion} className="img-button" onClick={toggle} width="128" alt="modal"/>
                 {/*<button className="button-default" onClick={toggle}>Show Modal</button>*/}
                 <Modal
                     isShowing={isShowing}

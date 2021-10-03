@@ -66,6 +66,10 @@ body {
     width: 100%;
 }
 
+.img-button:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 767px) { 
 
     body {
