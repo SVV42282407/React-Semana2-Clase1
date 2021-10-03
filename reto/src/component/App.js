@@ -2,8 +2,12 @@ import './App.css';
 import LoginHackaton from './functional/loginhackaton';
 import MenuHackaton from './functional/menuHackaton';
 import { menu } from '../data/menu';
+import Modal from './functional/Modal';
+import useModal from './functional/Modal/useModal';
 
 function App() {
+    const {isShowing, toggle} = useModal();
+    const modalContent = "<p>Hello, I'm a modal</p>";
     return (
         <div className="container">
             <div className="nav-bar">
@@ -27,7 +31,14 @@ function App() {
                         <LoginHackaton/>
                     </div>
                 </div>
-                <div className="center">2</div>
+                <div className="center">
+                <button className="button-default" onClick={toggle}>Show Modal</button>
+                <Modal
+                    isShowing={isShowing}
+                    hide={toggle}
+                    modalContent={modalContent}
+                />
+                </div>
                 <div className="right">3</div>
             </div>
             <div className="footer"></div>
