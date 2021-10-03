@@ -4,6 +4,7 @@ import MenuHackaton from './functional/menuHackaton';
 import { menu } from '../data/menu';
 import Modal from './functional/Modal';
 import useModal from './functional/Modal/useModal';
+import animacion from '../data/animacion.gif';
 
 function App() {
     const {isShowing, toggle} = useModal();
@@ -32,7 +33,8 @@ function App() {
                     </div>
                 </div>
                 <div className="center">
-                <button className="button-default" onClick={toggle}>Show Modal</button>
+                    <img src={animacion} onClick={toggle} width="128" alt="modal"/>
+                {/*<button className="button-default" onClick={toggle}>Show Modal</button>*/}
                 <Modal
                     isShowing={isShowing}
                     hide={toggle}
