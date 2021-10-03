@@ -7,3 +7,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+input[name="username"] {
+    min-width: 300px;
+}
+
+.submit-button {
+    background-color: #B56B07;
+    color: white;
+    border: none;
+    float: right;
+}

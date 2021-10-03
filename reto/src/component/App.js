@@ -19,6 +19,7 @@ function App() {
                 <div className="left">
                     <div className="row">
                       <h1>Connect to people, not platforms.</h1>
+                      <p>Person-mediate health data exchange is the future of Health IT and precision medicine. Youbase was built to take us there.</p>
                     </div>
                     <LoginHackaton/>
                 </div>

@@ -9,7 +9,8 @@ const LoginHackaton = () => {
     }
 
     return(
-        <div className="loginForm">
+        <div className="loginForm row">
+            <p>Sign up for out beta list to learn more.</p>
             <form name="loginForm" action="." method="POST">
                 <div className="row">
                     <input className="form-control" autoComplete="off" name="username" placeholder="Username" required/>
